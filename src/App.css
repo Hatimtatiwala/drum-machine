@@ -1,0 +1,43 @@
+#drum-machine {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #282c34;
+  color: white;
+}
+
+#display {
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 2px solid white;
+  width: 80%;
+  text-align: center;
+  font-size: 24px;
+  background-color: #333;
+}
+
+.pad-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.drum-pad {
+  background-color: #444;
+  border: 1px solid white;
+  padding: 20px;
+  text-align: center;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.drum-pad:hover {
+  background-color: #555;
+}
+
+.clip {
+  display: none;
+}
